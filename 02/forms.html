@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>第二回課題、フォーム部品練習</title>
+    </head>
+    <body>
+        <h1>好きな食べ物に関するアンケート</h1>
+        <form method='get' action='receive.php'>
+        <table border="1" style="border-collapse:collapse;">
+            <tr>
+                <th width="330">名前</th>
+                <td width="400"><input type="text" name="name" size="10" maxlength="10" /></td>
+            </tr>
+            <tr>
+                <th width="120">メールアドレス</th>
+                <td width="400"><input type="text" name="post" size="50" maxlength="50" /></td>
+            </tr>
+            <tr>
+                <th width="120">一番おいしいと感じるものはどれですか？</th>
+                <td width="400">
+                    <input type="radio" name="radio" value="カレー" checked="checked" />カレー
+                    <input type="radio" name="radio" value="シチュー" />シチュー
+                    <input type="radio" name="radio" value="ボルシチ" />ボルシチ
+                </td>
+            </tr>
+            <tr>
+                <th width="120">それはどの季節に食べたいですか？</th>
+                <td width="400">
+                    <select name="kisetu">
+                        <option value="春" selected="selected">季節は？</option>
+                        <option value="夏">春</option>
+                        <option value="夏">夏</option>
+                        <option value="秋">秋</option>
+                        <option value="冬">冬</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="120">その料理にトッピングするなら以下のどれがいいですか？</th>
+                <td width="400">
+                    <input type="checkbox" name="hobby[]" value="チーズ">チーズ
+                    <input type="checkbox" name="hobby[]" value="福神漬け">福神漬け
+                    <input type="checkbox" name="hobby[]" value="塩・コショウ">塩・コショウ
+                </td>
+            </tr>
+            <tr>
+                <th width="200">もしこのアンケートに関してご質問などございましたらご記入ください。</th>
+                <td width="400"><textarea name="kansou" rows="5" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:right;"><input type="submit" value="送信する"><input type="reset" value="リセット"></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
