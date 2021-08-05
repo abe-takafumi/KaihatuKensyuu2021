@@ -39,7 +39,7 @@
                 <td><input type="text" name="kazu1" size="3" maxlength="3" />個</td>
                 <td>
                     <input type="radio" name="zei1" value="8" />8%
-                    <input type="radio" name="zei1" value="10" />10%
+                    <input type="radio" name="zei1" value="10" checked="checked"/>10%
                 </td>
             </tr>
             <tr>
@@ -48,7 +48,7 @@
                 <td><input type="text" name="kazu2" size="3" maxlength="3" />個</td>
                 <td>
                     <input type="radio" name="zei2" value="8" />8%
-                    <input type="radio" name="zei2" value="10" />10%
+                    <input type="radio" name="zei2" value="10" checked="checked" />10%
                 </td>
             </tr>
             <tr>
@@ -57,7 +57,7 @@
                 <td><input type="text" name="kazu3" size="3" maxlength="3" />個</td>
                 <td>
                     <input type="radio" name="zei3" value="8" />8%
-                    <input type="radio" name="zei3" value="10" />10%
+                    <input type="radio" name="zei3" value="10" checked="checked"/>10%
                 </td>
             </tr>
             <tr>
@@ -66,7 +66,7 @@
                 <td><input type="text" name="kazu4" size="3" maxlength="3" />個</td>
                 <td>
                     <input type="radio" name="zei4" value="8" />8%
-                    <input type="radio" name="zei4" value="10" />10%
+                    <input type="radio" name="zei4" value="10" checked="checked"/>10%
                 </td>
             </tr>
             <tr>
@@ -75,7 +75,7 @@
                 <td><input type="text" name="kazu5" size="3" maxlength="3" />個</td>
                 <td>
                     <input type="radio" name="zei5" value="8" />8%
-                    <input type="radio" name="zei5" value="10" />10%
+                    <input type="radio" name="zei5" value="10" checked="checked"/>10%
                 </td>
             </tr>
         </table>
