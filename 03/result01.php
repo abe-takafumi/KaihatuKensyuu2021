@@ -10,14 +10,12 @@
         <?php
             $id="admin";
             $password="password";
+
             if($_POST['id'] == $id AND $_POST['password'] == $password){
                 echo "ようこそ、".$id."さん！";
-            } else if($_POST['id'] == $id AND $_POST['password'] != $password) {
-                echo "パスワードが間違っています。お忘れでしょうか？";
-            }else if($_POST['id'] != $id AND $_POST['password'] == $password){
-                echo "ログインIDが間違っています。お忘れでしょうか？";
+
             }else{
-                echo "ログインID、パスワードともに間違っています。<br>個人情報の登録は行いましたか？";
+                echo "登録内容と一致しません。個人情報の登録は行いましたか？";
             }
         ?>
     </body>

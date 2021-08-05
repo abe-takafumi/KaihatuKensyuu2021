@@ -12,12 +12,12 @@
             $pw="pass";
             $gold_id="admin_gold";
             $gold_pw="pass_gold";
-            if($_POST['id'] == $id AND $_POST['pw'] == $pw){
-                echo "ようこそ、".$id."さん！。よろしく！";
+            if($_POST['id'] == $gold_id AND $_POST['pw'] == $gold_pw){
+                echo "名前：".$id."<br>登録内容：ゴールド会員";
             } else if($_POST['id'] == $gold_id AND $_POST['pw'] == $gold_pw) {
-                echo "ようこそ、".$id."様。よろしくお願いいたします。";
+                echo "名前".$id."<br>登録内容：ノーマル会員";
             }else{
-                echo "ログインID・パスワードのどちらか、もしくはいづれも間違っています。。";
+                echo "登録内容と一致しません。個人情報の登録は行いましたか？";
             }
         ?>
     </body>
