@@ -24,18 +24,18 @@
                     'age' => 21,
                     'food' => 'カレーライス'
                 );
-
                 foreach($me_data as $each){
-                    echo $each . "<br/>";
+                    echo $each;
                 }
-
                 foreach($me_data as $key => $value){
                     echo "<tr><td>".$key."</td><td>".$value."</td></tr>";
                 }
-                echo "<pre>";
-                var_dump($me_data);
-                "</pre>";
             ?>
         </table>
+        <pre>
+            <?php
+                var_dump($me_data);
+            ?>
+        </pre>
     </body>
 </html>

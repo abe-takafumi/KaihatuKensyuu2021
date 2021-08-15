@@ -28,12 +28,14 @@
                     foreach($team as $x){
                         echo "<td>".$x."</td>" ;
                     }
-                    "</tr>";
+                    echo "</tr>";
                 }
-                echo "<pre>";
-                var_dump($hamu);
-                "</pre>";
             ?>
         </table>
+        <pre>
+            <?php
+                var_dump($hamu);
+            ?>
+        </pre>
     </body>
 </html>

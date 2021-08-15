@@ -16,50 +16,47 @@
         <title>個人認証</title>
     </head>
     <body>
+        <?php
+            $players = array(
+                array(
+                    "id" => "3",
+                    "name" => "梶谷隆幸",
+                    "position" => "外野手",
+                    "from" => "島根",
+                    "year" => "2007",
+                ),
+                array(
+                    "id" => "44",
+                    "name" => "佐野恵太",
+                    "position" => "外野手",
+                    "from" => "岡山",
+                    "year" => "2017",
+                ),
+                array(
+                    "id" => "15",
+                    "name" => "井納翔一",
+                    "position" => "投手",
+                    "from" => "東京",
+                    "year" => "2013",
+                )
+            );
+        ?>
         <table border="1">
+            <tr><th>背番号</th><th>名前</th><th>ポジション</th><th>出身</th><th>入団年</th></tr>
             <?php
-                $players = array(
-                    array(
-                        "id" => "背番号",
-                        "name" => "名前",
-                        "position" => "ポジション",
-                        "from" => "出身地",
-                        "year" => "入団年",
-                    ),
-                    array(
-                        "id" => "3",
-                        "name" => "梶谷隆幸",
-                        "position" => "外野手",
-                        "from" => "島根",
-                        "year" => "2007",
-                    ),
-                    array(
-                        "id" => "44",
-                        "name" => "佐野恵太",
-                        "position" => "外野手",
-                        "from" => "岡山",
-                        "year" => "2017",
-                    ),
-                    array(
-                        "id" => "15",
-                        "name" => "井納翔一",
-                        "position" => "投手",
-                        "from" => "東京",
-                        "year" => "2013",
-                    )
-                );
-
-                foreach($players as $team){
-                    echo "<tr>";
-                    foreach($team as $x){
-                        echo "<td>".$x."</td>" ;
-                    }
-                    "</tr>";
+                foreach ($players as $x) {
+                    echo "<tr><td>" . $x['id'] . "</td>";
+                    echo "<td>" . $x['name'] . "</td>";
+                    echo "<td>" . $x['position'] . "</td>";
+                    echo "<td>" . $x['from'] . "</td>";
+                    echo "<td>" . $x['year'] . "</td></tr>";
                 }
-                echo "<pre>";
-                var_dump($players);
-                "</pre>";
             ?>
         </table>
+        <pre>
+            <?php
+                var_dump($players);
+            ?>
+        </pre>
     </body>
 </html>
